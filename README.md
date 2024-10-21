@@ -1,22 +1,71 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## About
+
+This project is not intended for commercial use. The project is designed to automate the process of increasing the network of LinkedIn contacts.
+
+## Technology stack
+
+| Technology |
+| ---------- |
+| React      |
+| Next.js    |
+| TypeScript |
+| PlayWright |
+
+## Engines
+
+| engine | version   |
+| ------ | --------- |
+| node   | >=20.14.0 |
+| npm    | >=10.7.0  |
+
 ## Getting Started
 
-First, run the development server:
+1. Clone the repo:
+
+```bash
+git clone https://github.com/Ivan-Kanashchenko/next-playwright-app.git
+```
+
+2. Install dependencies:
+
+```bash
+npm i
+```
+
+3. Create `.env` file in the root directory with your credentials:
+
+```bash
+USER_EMAIL = 'your mail'
+USER_PASSWORD = 'your password'
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Run the server
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Use the following [Chrome extension](https://github.com/Ivan-Kanashchenko/react-chrome-extension) to make requests to your localhost
+
+## Debuging
+
+Debug the main flow:
+
+```bash
+npx playwright test --debug
+```
+
+Run web inspector:
+
+```bash
+npx playwright codegen https://www.linkedin.com/
+```
 
 ## Learn More
 
